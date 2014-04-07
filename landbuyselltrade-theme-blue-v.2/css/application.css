@@ -5,7 +5,10 @@
 #left-column-content {
     padding:0;   
 }
-
+.carousel-banner p {
+    margin-top: 7px;
+    margin-top: 7px;
+}
 #global-content {
     overflow: hidden;
 }
@@ -152,7 +155,6 @@ ul{
     min-height: 14px;
 }
 body{
-    background:#F6F3F3 url("../img/body_bg.jpg") repeat scroll left top ;
     height: auto !important;
     min-height: 100%;
     min-width: 100%;
@@ -434,6 +436,9 @@ div.row{
         width: 100%;
         margin-left: 19px;
     }
+    .carousel-banners {
+        width: 100% !important;
+    }
 }
 @media screen and (max-width:1199px) { 
     .container,.navbar-inner,
@@ -447,6 +452,9 @@ div.row{
     }
     #content ul.formTabs {
         width:100%; 
+    }
+    .carousel-banners {
+        width: 98% !important;
     }
     .twocolumns{
         width:60%;
@@ -1859,9 +1867,6 @@ div.row{
     margin-top:0 !important; 
     margin-bottom:10px;
 }
-.carousel-banners {
-    width: 100% !important;
-}
 #socialbar{
     float:right;   
 }
@@ -2209,6 +2214,18 @@ div.scrollable div.items div.itemPadding {
     -moz-box-shadow: 0 0 1em #888888;
     box-shadow: 0 0 1em #888888;
     font-size: 11px;
+}
+#breadcrumbs-current {
+    color: #005580;
+}
+.breadcrumb a {
+    color: #005580;
+}
+.carousel-banners {
+    box-shadow: 0 0 1em #888888;
+}
+#recent-listings .tileItem.visualIEFloatFix {
+    border: 1px solid #0d5eaf;
 }
 .section-front-page .portletItem label{
     font-weight: normal;
@@ -2579,9 +2596,14 @@ img.image-left, img.image-right, .captioned img {
     width:60px !important;
     height:40px  !important;
 }
+#listing-collection .tileItem.visualIEFloatFix{
+    border-radius: 10px; 
+    padding-bottom: 10px;
+}
 #listing-collection h2.tileHeadline a{
     font-size:15px;
     font-weight: normal;
+    padding-left: 5px;
 }
 #listing-collection .listingBar a{
     margin:3px;
